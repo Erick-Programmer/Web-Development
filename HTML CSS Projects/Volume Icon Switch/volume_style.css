@@ -1,4 +1,4 @@
-/* pré-definição */
+/* predefinition */
 .volume {
     --line: #fff; 
     --line-width: 6px; 
@@ -23,7 +23,7 @@
 
 }   
 
-/*Roteiro da animação*/
+/*animation road map*/
 
 .volume input + svg path { 
     -webkit-animation: var(--name) var(--duration) ease forwards; 
@@ -38,7 +38,7 @@
     stroke-dashoffset: 1px;
 }
 
-/* condições ao clicar (ckeckbox preenchido) */
+/* checkbox conditions - it's filled */
 
 .volume input:checked + svg path:nth-child(1) { 
     --name: shape; 
@@ -52,7 +52,7 @@
     --name: large; 
 }
 
-/* checkbox não preenchido */
+/* checkbox conditions - it's not filled */
 
 .volume input:not(checked) + svg path:nth-child(1) { 
     --name: shape-r; 
@@ -66,7 +66,7 @@
     --name: large-r;   
 }
 
-/*Animação de cada path*/ 
+/*path animations*/ 
 
 @-webkit-keyframes small { 
     0%, 30% {
