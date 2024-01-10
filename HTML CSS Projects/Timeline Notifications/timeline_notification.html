@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline - Notifications</title>
+    <link rel="stylesheet" href="timeline_notification.css">
+</head>
+<body>
+    <!--Underground box-->
+    <div class="container">
+        <!--Search box-->
+        <div class="box">
+            <!--div - element-->
+            <div class="container-3">
+                <span class="icon"><i class="fa fa-search"></i></span>
+                <input type="search" id="search" placeholder="Search...">
+            </div>
+        </div>
+        <!--notification box-->
+        <div class="leftbox">
+            <nav>
+                <a id="dashboard"><i class="fas fa-tachometer-alt"></i></a>
+                <a id="profile"><i class="fas fa-user"></i></a>
+                <a id="settings"><i class="fas fa-cog"></i></a>
+                <a id="messages"><i class="fas fa-comments"></i></a>
+                <a id="notification"><i class="fas fa-bell"></i></a>
+            </nav>
+        </div>
+        <!--text for the notification-->
+        <div class="right-box">
+            <div class="rb-container">
+                <ul class="rb">
+                    <li class="rb-item" ng-repeat="itembx">
+                        <div class="timestamp">
+                            3rd Jan 2024<br> 15:04 PM
+                        </div>
+                        <div class="item-title">Andrea Passos posted a photo on your wall</div>
+
+                    </li>
+                    <li class="rb-item" ng-repeat="itembx">
+                        <div class="timestamp">
+                            23th Dec 2023<br> 10:39 AM
+                        </div>
+                        <div class="item-title">Jazz Mota commented on your last post</div>
+
+                    </li>
+                    <li class="rb-item" ng-repeat="itembx">
+                        <div class="timestamp">
+                            20th Nov 2023<br> 18:04 PM
+                        </div>
+                        <div class="item-title">Tamires Silva just send you a message</div>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
