@@ -1,0 +1,64 @@
+body {
+    margin: 25px;
+    text-align: center;
+    background: #000;
+}
+
+h1 {
+    color: #26abde
+}
+
+.virtual-keyboard .row {
+    text-align: center;
+    margin: 0 0 15px;
+}
+
+.virtual-keyboard .row.spacebar input{
+    padding: 10px 150px;
+}
+
+/*specify button on brackets*/
+.virtual-keyboard input[type=button] {
+    padding: 10px 20px;
+    /*edit border */
+    border-radius: 30px;
+    border: 3px solid #202c2b;
+    background: #13ab9e;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/*way of entry on property of the class*/
+.virtual-keyboard input [type=button].shift-activated {
+    background: red;
+}
+
+/*specify delete button and shift button*/
+.virtual-keyboard input[type=button].delete, .virtual-keyboard input[type=button].shift {
+    text-transform: none;
+}
+
+.output {
+    margin: 15px; /*height and width*/
+}
+
+.output input {
+    color: white; /*first layer*/
+    background: black; /*underground layer*/
+    border: 0px; /*none border*/
+    line-height: 2.2em; /*height property that is space, it's similar top*/
+    text-align: center; /*way form for the text*/
+    font-size: 2em;
+    width: 100%;
+}
+/*pseud element*/
+.output input:focus {
+    outline: none;
+    border: 0px;
+}
+/*pseud element for placeholder*/
+.output ::-webkit-input-placeholder{
+    color: white;
+    text-align: center;
+    font-size: 1em;
+}
