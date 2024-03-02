@@ -1,0 +1,81 @@
+:root{
+    /*Header*/
+    --head-background: #8ecae6;
+    --head-font-color: #023047;
+    --head-font-family: 'Roboto', Arial;
+    --head-font-size: 1.0em;
+    
+    /*Banner*/
+    --ban-background: #023047;
+    --ban-font-color: #8ecae6;
+    --ban-font-family: 'Open Sans', Arial;
+    --ban-font-size: 1.6em;
+    
+    /*Conteudo1*/
+    --con1-background: #FB8500;
+    --con1-font-color: #023047;
+    --con1-font-family: 'Open Sans', Arial;
+    --con1-font-size: 1.6em;
+    
+    /*Conteudo2*/
+    --con2-background: #FFB703;
+    --con2-font-color: #8ecae6;
+    --con2-font-family: 'Open Sans', Arial;
+    --con2-font-size: 1.2em;
+    
+    /*Footer*/
+    --foo-background: #FFB703;
+    --foo-font-color: #8ecae6;
+    --foo-font-family: 'Roboto', Arial;
+    --foo-font-size: 1.4em;
+  }
+  
+  body {
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  header { 
+    padding-bottom: 0px;
+    background: var(--head-background);
+    border-bottom: 5px solid var(--head-font-color);
+  }
+  
+  .head {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    color: var(--head-font-color);
+    font-size: var(--head-font-size);
+    font-family: var(--head-font-family);
+  }
+  
+  .nav1 {
+    justify-content: center;
+    margin-top: 8px;
+  }
+
+  .nav1 ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+  
+  .nav1 ul li {
+    margin-right: 20px;
+  }
+  
+  .nav1 ul li:last-child {
+    margin-right: 0;
+  }
+  
+  .nav1 ul li a{
+    text-decoration: none;
+    color: var(--head-font-color);
+  }
+  
+  
