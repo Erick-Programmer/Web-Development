@@ -1,12 +1,12 @@
 :root{
     /*Header*/
-    --head-background: #8ecae6;
+    --head-background: #f1f1f1;
     --head-font-color: #023047;
-    --head-font-family: 'Roboto', Arial;
+    --head-font-family: 'Opens Sans', Arial;
     --head-font-size: 1.0em;
     
     /*Banner*/
-    --ban-background: #023047;
+    --ban-background: #4b758a;
     --ban-font-color: #8ecae6;
     --ban-font-family: 'Open Sans', Arial;
     --ban-font-size: 1.6em;
@@ -14,14 +14,14 @@
     /*Conteudo1*/
     --con1-background: #FB8500;
     --con1-font-color: #023047;
-    --con1-font-family: 'Open Sans', Arial;
-    --con1-font-size: 1.6em;
+    --con1-font-family: 'Roboto', Arial;
+    --con1-font-size: 1.3em;
     
     /*Conteudo2*/
     --con2-background: #FFB703;
     --con2-font-color: #8ecae6;
     --con2-font-family: 'Open Sans', Arial;
-    --con2-font-size: 1.2em;
+    --con2-font-size: 0.9em;
     
     /*Footer*/
     --foo-background: #FFB703;
@@ -38,8 +38,9 @@
   
   header { 
     padding-bottom: 0px;
+
     background: var(--head-background);
-    border-bottom: 5px solid var(--head-font-color);
+    border-bottom: 1px solid var(--head-font-color);
   }
   
   .head {
@@ -48,11 +49,12 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    
     color: var(--head-font-color);
     font-size: var(--head-font-size);
     font-family: var(--head-font-family);
   }
-  
+
   .nav1 {
     justify-content: center;
     margin-top: 8px;
@@ -77,5 +79,80 @@
     text-decoration: none;
     color: var(--head-font-color);
   }
+
+  .ban {
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--ban-background);
+    font-family: var(--ban-font-family);
+  }
   
+  .ban section {
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #8ecae6;
+  }
+
+  .con1 {
+    padding: 100px;
+    margin-left: 50px;
+
+    background-color: var(--con1-background);
+    font-family: var(--con1-font-family);
+    font-size: var(--con1-font-size);
+  }
+
+  .con2 {
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+
+    background-color: var(--con2-background);
+    font-family: var(--con2-font-family);
+    font-size: var(--con2-font-size);
+  }
+
+.foo {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav2 {
+  margin: 80px 0;
+}
+
+.nav2 ul {
+  list-style: none;
+}
+
+.nav2 ul li {
+  margin-bottom: 15px;
+}
+
+.nav2 ul li:last-child {
+  margin-bottom: 0;
+}
+
+.nav2 ul li a{
+  text-decoration: none;
+}
+
+form {
+  margin: 80px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+
+
   
