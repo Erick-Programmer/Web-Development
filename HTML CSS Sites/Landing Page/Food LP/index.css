@@ -1,0 +1,115 @@
+:root{
+    /*Header*/
+    --head-background: #f1f1f1;
+    --head-font-color: #023047;
+    --head-font-family: 'Opens Sans', Arial;
+    --head-font-size: 1.0em;
+    
+    /*Banner*/
+    --ban-background: #4b758a7c;
+    --ban-font-color: #8ecae6;
+    --ban-font-family: 'Open Sans', Arial;
+    --ban-font-size: 1.6em;
+    
+    /*Conteudo1*/
+    --con1-background: #fb86008a;
+    --con1-font-color: #023047;
+    --con1-font-family: 'Roboto', Arial;
+    --con1-font-size: 1.3em;
+    
+    /*Conteudo2*/
+    --con2-background: #ffb8037e;
+    --con2-font-color: #8ecae6;
+    --con2-font-family: 'Open Sans', Arial;
+    --con2-font-size: 0.9em;
+
+    /*foto*/
+    --foto-background: #3996be73;
+    --foto-font-color: #8ecae6;
+    --foto-font-family: 'Open Sans', Arial;
+    --foto-font-size: 0.9em;
+    
+    /*Footer*/
+    --foo-background: #ffb8037a;
+    --foo-font-color: #0c455f;
+    --foo-font-family: 'Roboto', Arial;
+    --foo-font-size: 1.1em;
+
+    /*form*/
+    --form-font-size: 1.0em;
+    --form-font-family: 'Roboto', Arial;
+    --form-font-color: #093447;
+
+  }
+  
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+header {
+   background-color: rgb(255, 227, 126);
+
+}
+.head {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgb(255, 227, 126);
+}
+
+.head section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav1 {
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 20px;
+
+}
+.nav1 ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav1 ul li {
+    margin-right: 10px;
+}
+
+.nav1 ul li a {
+    text-decoration: none;
+}
+
+.main1 {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
+    background-color: rgb(255, 227, 126);
+
+}
+
+.text1 {
+    border: 1px solid blue;
+    padding: 300px 0;
+    margin: 20px;
+
+}
+
+.imag1 {
+    padding: 300px 0;
+    border: 1px solid blue;
+    margin: 20px;
+
+}
+
+
+
+
+
