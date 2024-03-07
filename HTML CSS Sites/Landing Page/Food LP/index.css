@@ -170,6 +170,104 @@ body {
 
 }
 
+/*[final 5]*/
+.main5 {
+    border: 1px solid red;
+    margin: 0 30px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.img5 {
+    padding: 20px 0;
+    display: flex;
+
+}
+
+.text5 {
+    padding: 20px 0;
+    justify-content: center;
+    
+}
+
+.perfil5 {
+    display: flex;
+
+}
+
+.perfil5 img {
+    border: 1px solid blue;
+}
+
+.text5-1 {
+    text-align: center;
+    border: 1px solid blue;
+
+}
+
+
+.button5 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button5 button {
+    margin-right: 10px;
+}
+
+.button5 button:last-child{
+    margin-right: 0;
+}
+
+/*[final 6]*/
+.main6 {
+    border: 1px solid red;
+    margin: 0 30px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.img6 {
+    padding: 80px 0;
+    display: flex;
+
+}
+
+.text6 {
+    padding: 80px 0;
+    justify-content: center;
+}
+
+.button6 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.foo7 {
+    border: 1px solid red;
+    margin: 0 30px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.text7 {
+    padding: 20px 0;
+}
+
+.img7 {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.texto7 {
+    display: flex;
+}
+
+
 
 
 
