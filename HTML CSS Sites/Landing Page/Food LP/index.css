@@ -1,44 +1,51 @@
 :root{
-    /*Header*/
-    --head-background: #f1f1f1;
-    --head-font-color: #023047;
-    --head-font-family: 'Opens Sans', Arial;
-    --head-font-size: 1.0em;
+    /*Header0*/
+    --head0-background: #F4F1BB;
+    --head0-font-color: #000102;
+    --head0-font-family: 'Montserrat', Arial;
+    --head0-font-size: 1.0em;
     
-    /*Banner*/
-    --ban-background: #4b758a7c;
-    --ban-font-color: #8ecae6;
-    --ban-font-family: 'Open Sans', Arial;
-    --ban-font-size: 1.6em;
+    /*Main1*/
+    --main1-background: #F4F1BB;
+    --main1-font-color: #8ecae6;
+    --main1-font-family: 'Open Sans', Arial;
+    --main1-font-size: 1.9em;
     
-    /*Conteudo1*/
-    --con1-background: #fb86008a;
-    --con1-font-color: #023047;
-    --con1-font-family: 'Roboto', Arial;
-    --con1-font-size: 1.3em;
+    /*Main2 --*/ 
+    --main2-background: #ed6a5a;
+    --main2-font-color: #8ecae6;
+    --main2-font-family: 'Open Sans', Arial;
+    --main2-font-size: 1.6em;
     
-    /*Conteudo2*/
-    --con2-background: #ffb8037e;
-    --con2-font-color: #8ecae6;
-    --con2-font-family: 'Open Sans', Arial;
-    --con2-font-size: 0.9em;
+    /*Main3 -- */
+    --main3-background: #ed6a5a;
+    --main3-font-color: #8ecae6;
+    --main3-font-family: 'Open Sans', Arial;
+    --main3-font-size: 1.6em;
 
-    /*foto*/
-    --foto-background: #3996be73;
-    --foto-font-color: #8ecae6;
-    --foto-font-family: 'Open Sans', Arial;
-    --foto-font-size: 0.9em;
+    /*Main4*/
+    --main4-background: #000000;
+    --main4-font-color: #8ecae6;
+    --main4-font-family: 'Open Sans', Arial;
+    --main4-font-size: 1.6em;
     
-    /*Footer*/
-    --foo-background: #ffb8037a;
-    --foo-font-color: #0c455f;
-    --foo-font-family: 'Roboto', Arial;
-    --foo-font-size: 1.1em;
+    /*Main5--*/
+    --main5-background: #ed6a5a;
+    --main5-font-color: #8ecae6;
+    --main5-font-family: 'Open Sans', Arial;
+    --main5-font-size: 1.6em;
 
-    /*form*/
-    --form-font-size: 1.0em;
-    --form-font-family: 'Roboto', Arial;
-    --form-font-color: #093447;
+    /*Main6*/
+    --main6-background: #ed6a5a;
+    --main6-font-color: #8ecae6;
+    --main6-font-family: 'Open Sans', Arial;
+    --main6-font-size: 1.6em;
+
+    /*Foo7--*/
+    --foo7-background: #ed6a5a;
+    --foo7-font-color: #8ecae6;
+    --foo7-font-family: 'Open Sans', Arial;
+    --foo7-font-size: 1.6em;
 
   }
   
@@ -51,10 +58,13 @@ body {
 .head0 {
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
-    background-color: rgb(255, 227, 126);
-    border: 1px solid red;
     margin: 0 30px;
+    margin-top: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    background-color: var(--head0-background);
+    font-size: var(--head0-font-size);
 
 }
 
@@ -62,6 +72,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
+
+    font-size: 0.8em;
 }
 
 .nav0 {
@@ -74,6 +87,7 @@ body {
 .nav0 ul {
     display: flex;
     list-style: none;
+
 }
 
 .nav0 ul li {
@@ -82,26 +96,61 @@ body {
 
 .nav0 ul li a {
     text-decoration: none;
+
+    color: var(--head0-font-color);
 }
 
 /*[final 1]*/
 .main1 {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(255, 227, 126);
-    border: 1px solid red;
+    background: var(--main1-background);
     margin: 0 30px;
 
 }
 
-.text1 {
-    padding: 150px 0;
-    margin: 20px;
+.imag1 img {
+    width: 350px;
+    height: 350px;
+}
 
+.text1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin: 20px;
+}
+
+.text1 h2 {
+    position: relative;
+    top: 30px;
+
+    font-family: var(--main1-font-family);
+    font-size: var(--main1-font-size);
+}
+
+.text1 button {
+    position: relative;
+    top: 30px;
+    width: 30%;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    justify-content: center;
+
+    background-color: #e9412b;
+    font-size: 20px;
+}
+
+.rede1 {
+    display: flex;
+    position: relative;
+    top: 90px;
 }
 
 .imag1 {
-    padding: 150px 0;
+    padding: 0;
     margin: 20px;
 
 }
@@ -244,6 +293,8 @@ body {
     display: flex;
     justify-content: flex-end;
 }
+
+/*[final 7]*/
 
 .foo7 {
     border: 1px solid red;
