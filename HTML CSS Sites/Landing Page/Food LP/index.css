@@ -28,6 +28,14 @@
     --main4-font-color: #8ecae6;
     --main4-font-family: 'Open Sans', Arial;
     --main4-font-size: 1.6em;
+
+    --main4-background-button4: #f5f09c;
+    --main4-font-color-button4: #fdfdfd;
+
+
+    --main4-background-button4-1: #f04f3a;
+    --main4-font-color-button4-1: #ffffff;
+
     
     /*Main5--*/
     --main5-background: #ed6a5a;
@@ -106,6 +114,7 @@ body {
     justify-content: space-between;
     background: var(--main1-background);
     margin: 0 30px;
+    max-width: 100%;
 
 }
 
@@ -157,27 +166,65 @@ body {
 
 /*[final 2]*/
 .main2 {
-    border: 1px solid red;
     margin: 0 30px;
+    max-width: 100%;
+    padding: 0;
 
 }
 
 .text2 {
-    padding: 50px 0;
+    padding-top: 50px;
     justify-content: center;
     text-align: center;
 }
 
+.text2 h2:last-child{
+    position: relative;
+    top: -20px;
+}
+
 .roll2 {
-    padding: 100px 0;
+    padding-bottom: 50px;
     justify-content: space-around;
     display: flex;
+    align-items: center;
+}
+
+.roll2 img {
+    width: 200px;
+    height: 200px;
+    box-shadow: 0px 2px 1.2px;
+}
+
+#icone2-1 {
+    border-bottom-left-radius: 10px;
+}
+
+#icone2-2 {
+    border-bottom-right-radius: 10px;
+}
+
+.roll2 button {
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
 
 }
 
+#button2 {
+    background-color: #f04f3a;
+    width: 10em;
+    max-width: 5%;
+}
+
+#button2-1 {
+    background-color: #ffffff;
+    width: 10em;
+    max-width: 5%;
+    border: 2px solid #f04f3a;
+}
 /*[final 3]*/
 .main3 {
-    border: 1px solid red;
     margin: 0 30px;
     display: flex;
     justify-content: space-around;
@@ -185,38 +232,136 @@ body {
 }
 
 .img3 {
-    padding: 150px 0;
+    padding: 50px 0;
+    max-width: 50%;
     justify-content: center;
     text-align: center;
+
+}
+
+.img3 img {
+    max-width: 300px;
+    max-height: 300px;
 }
 
 .text3 {
-    padding: 150px 0;
+    padding: 40px 0;
     display: flex;
     flex-direction: column;
+    max-width: 50%;
+
 
 }
 
+.text3 p {
+    max-width: 400px;
+    position: relative;
+    top: -30px;
+
+    font-size: 0.93em;
+    
+}
+
+.text3 section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #000000;
+    max-width: 50%;
+    border-radius: 50px;
+    position: relative;
+    top: -30px;
+    padding: 0;
+    height: 35px;
+}
+
+.text3 section h3 {
+    font-size: 1.2em;
+    margin-right: 10px;
+
+    color:#fffffa;
+}
+
+.text3 section button {
+    padding: 5px 1px;
+    margin-right: 0px;
+    border-radius: 50px;
+    background-color: #f04f3a;
+    
+}
+
+
 /*[final 4]*/
 .main4 {
-    border: 1px solid red;
-    margin: 0 30px;
+    margin: 20px 30px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+
+    border-radius: 20px;
+    max-height: 250px;
+    border: 1px solid red;
+    background: var(--main4-background);
 
 }
 
 .text4 {
-    padding: 150px 0;
+    padding: 50px 0;
     justify-content: center;
     text-align: center;
 }
 
+.text4 img {
+    max-width: 330px;
+    max-height: 330px;
+}
+
 .img4 {
-    padding: 150px 0;
+    padding: 50px 0;
     display: flex;
     flex-direction: column;
+    max-width: 30%;
 
+}
+
+.img4 h2 {
+    color: #ffffff;
+    text-align: center;
+
+}
+
+.img4 section {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+
+    /*padding: 5px 15px;*/
+    border-radius: 30px;
+    text-align: center;
+}
+
+#but4 {
+    border: none;
+    padding: 3px 35px;
+    max-width: 300px;
+    margin-right: 10px; 
+    
+    font-weight: 200;
+    color: var(--main4-font-color-button4);
+    background-color: var(--main4-background-button4);
+
+
+}
+
+#but4-1 {
+    border: none;
+    padding: 3px 20px;
+    max-width: 300px;
+    margin-right: 0px;
+
+    background-color: var(--main4-background-button4-1);
+    color: var(--main4-font-color-button4-1);
 }
 
 /*[final 5]*/
