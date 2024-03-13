@@ -92,11 +92,24 @@ body {
     font-size: 0.8em;
 }
 
+
+/*definida as proporções*/
+.nav0M {
+    display: none; 
+}
+
+@media screen and (min-width: 431px) {
+    .nav0M {
+        display: none; 
+    }
+}
+
 .nav0 {
     justify-content: center;
     align-items: center;
     margin-top: 10px;
     margin-right: 20px;
+
 
 }
 .nav0 ul {
@@ -645,34 +658,43 @@ body {
     margin-right: 0;
 }
 
-/*Responsividade*/
+/*Responsividade - Mobile*/
 
 @media screen and (max-width: 430px) {
 
     /*Atualizar Live Server para atualizar
     as medições*/
 
-    /*[final0] - [ADD LIST MENU]*/
+    /*[final0 - Mobile] - [ADD LIST MENU]*/
+    header {
+        background: var(--head0-background);
+    }
 
     .head0 {
         max-width: 100%;
 
-        border: 1px solid red;
-        display: none;
+        border-radius: 0%;
+        margin: 0 auto;
+        display: flex;
     }
 
     .logo0{
         max-width: 50%;
-        display: none;
 
     }
+
+    .logo0 h2{
+        font-size: 1.2em;
+
+    }
+
 
     .nav0{
         max-width: 50%;
         display: none;
     }
 
-    /*[final1] - [ADD IMAGE]*/
+    /*[final1 - Mobile] - [ADD IMAGE]*/
    
     .main1 {
         max-width: 100%;
@@ -680,7 +702,8 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 20px;
+        margin: 0 auto;
+        border: 1px solid red;
     }
 
     .text1 {
@@ -704,12 +727,18 @@ body {
     }
 
     .imag1 {
-        width: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
         
-        display: none;
     }
 
-    /*[final2]*/
+    .imag1 img{
+        width: 200px;
+        height: 200px;
+    }
+
+    /*[final2 - Mobile]*/
 
     .main2 {
         max-width: 100%;
@@ -728,7 +757,7 @@ body {
         max-width: 50%;
     }
 
-    /*[final3]*/
+    /*[final3 - Mobile]*/
 
     .main3 {
         max-width: 100%;
@@ -753,7 +782,7 @@ body {
 
     }
 
-    /*[final4]*/
+    /*[final4 - Mobile]*/
     .main4 {
         max-width: 100%;
 
@@ -785,7 +814,7 @@ body {
         
     }
 
-    /*[final5]*/
+    /*[final5 - Mobile]*/
 
     .main5 {
         max-width: 100%;
@@ -812,7 +841,7 @@ body {
         justify-content: center;
     }
 
-    /*[final6]*/
+    /*[final6 - Mobile]*/
 
     .main6 {
         max-width: 100%;
@@ -854,7 +883,7 @@ body {
         padding: 5px;
     }
 
-    /*[foo7]*/
+    /*[foo7 - Mobile]*/
 
     .foo7{
         max-width: 100%;
