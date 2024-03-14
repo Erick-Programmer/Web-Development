@@ -94,12 +94,10 @@ body {
 
 
 /*definida as proporções*/
-.nav0M {
-    display: none; 
-}
+
 
 @media screen and (min-width: 431px) {
-    .nav0M {
+    .menu0M {
         display: none; 
     }
 }
@@ -210,19 +208,32 @@ body {
     align-items: center;
 }
 
-.roll2 img {
+.roll2 section {
     width: 200px;
     height: 200px;
-    box-shadow: 0px 2px 1.2px;
+    box-shadow: 0px 2px 1.2px;  
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#icone2-1 {
+.roll2 section img {
+    width: 50px;
+    height: 50px;
+}
+
+.imagem21{
     border-bottom-left-radius: 10px;
+
 }
 
-#icone2-2 {
+.imagem23 {
     border-bottom-right-radius: 10px;
 }
+
+
 
 .roll2 button {
     padding: 10px;
@@ -703,7 +714,6 @@ body {
         flex-direction: column;
         align-items: center;
         margin: 0 auto;
-        border: 1px solid red;
     }
 
     .text1 {
@@ -717,10 +727,37 @@ body {
         justify-content: justify;
         align-items: center;
         text-align: center;
-        font-size: 15px;
-    
+        font-size: 1.6em;
+
+        position: relative;
+        top: -25px;
         
     }
+
+    .text1 p {
+        justify-content: justify;
+        align-items: center;
+        text-align: center;
+        padding: 0 50px;   
+        font-size: 0.9em;
+
+        position: relative;
+        top: -25px;
+        margin: 0;
+    }
+
+    .text1 button {
+        position: relative;
+        top: -1px;
+        margin: 0;
+        
+    }
+
+    .imag1 {
+        position: relative;
+        top: -4px;
+    }
+
 
     .rede1 {
         display: none;
@@ -750,13 +787,56 @@ body {
     }
 
     .text2 {
-        max-width: 50%;
+        max-width: 100%;
     }
 
     .roll2 {
-        max-width: 50%;
+        max-width: 100%;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+     
+    .roll2 button {
+        padding: 10px 20px;
+        font-size: 5px;
     }
 
+    #button2 {
+        margin-right: 10px;
+    }
+
+    #button2-1 {
+        margin-left: 10px;
+    }
+   
+    
+    .roll2 section {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .roll2 section img {
+        width: 40px;
+        height: 40px;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    .roll2 section h2 {
+        font-size: 0.6em;
+    }
+
+    .imagem21 {
+        margin-right: 10px;
+    }
+
+    .imagem23 {
+        margin-left: 10px;
+    }
     /*[final3 - Mobile]*/
 
     .main3 {
