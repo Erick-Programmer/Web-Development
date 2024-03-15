@@ -87,9 +87,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-left: 25px;
 
-    font-size: 0.8em;
+}
+
+.logo0 h2 {
+    font-size: 1.2em;
+
+}
+
+.logo0 img {
+    width: 50px;
+    height: 50px;
+    margin-right: 6px;
+    position: relative;
+    top: -7px;
 }
 
 
@@ -105,7 +118,7 @@ body {
 .nav0 {
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-right: 20px;
 
 
@@ -123,6 +136,7 @@ body {
 .nav0 ul li a {
     text-decoration: none;
 
+    font-size: 1.15em;
     color: var(--head0-font-color);
 }
 
@@ -157,6 +171,12 @@ body {
     font-size: var(--main1-font-size);
 }
 
+@media screen and (min-width: 431px) {
+    .text1 p {
+        display: none; 
+    }
+}
+
 .text1 button {
     position: relative;
     top: 30px;
@@ -173,8 +193,37 @@ body {
 .rede1 {
     display: flex;
     position: relative;
-    top: 90px;
+    top: 70px;
+    position: relative;
+    right: -20px;
 }
+
+.rede1 section {
+    margin-right: 10px;
+}
+
+.rede1 section:last-child {
+    margin-right: 0;
+}
+
+.rede12 {
+    width: 30px;
+    height: 30px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    
+}
+
+.rede12 a img {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: 3px;
+}
+
 
 .imag1 {
     padding: 0;
@@ -192,13 +241,14 @@ body {
 
 .text2 {
     padding-top: 50px;
+    padding-bottom: 20px;
     justify-content: center;
     text-align: center;
 }
 
-.text2 h2:last-child{
-    position: relative;
-    top: -20px;
+.text2 h2 {
+    justify-content: justify;
+    font-size: 2.2em;
 }
 
 .roll2 {
@@ -239,13 +289,20 @@ body {
     padding: 10px;
     border-radius: 50px;
     border: none;
+}
 
+.roll2 button img {
+    width: 20px;
+    height: 15px;
+    margin: 0;
+    padding: 0;
 }
 
 #button2 {
     background-color: #f04f3a;
     width: 10em;
     max-width: 5%;
+    
 }
 
 #button2-1 {
