@@ -372,13 +372,20 @@ body {
 }
 
 .text3 section button {
-    padding: 5px 1px;
+    padding: 3px 6px;
     margin-right: 0px;
     border-radius: 50px;
     background-color: #f04f3a;
+    border: none;
     
 }
 
+.text3 section button img {
+    width: 25px;
+    height: 15px;
+    position: relative;
+    top: 1px;
+}
 
 /*[final 4]*/
 .main4 {
@@ -430,7 +437,7 @@ body {
 
 #but4 {
     border: none;
-    padding: 3px 35px;
+    padding: 4px 35px;
     max-width: 300px;
     margin-right: 10px; 
     
@@ -443,7 +450,7 @@ body {
 
 #but4-1 {
     border: none;
-    padding: 3px 20px;
+    padding: 4px 20px;
     max-width: 300px;
     margin-right: 0px;
 
@@ -457,6 +464,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
 
 }
 
@@ -483,7 +491,6 @@ body {
     width: 50%;
     
     margin-top: 20px;
-
 }
 
 .frase5 {
@@ -544,6 +551,7 @@ body {
 .button5 {
     display: flex;
     justify-content: flex-end;
+
 }
 
 .button5 button {
@@ -571,6 +579,20 @@ body {
 #but5-1{
     background: var(--main5-background-button5-1);
     color: var(--main5-font-color-button5-1);
+}
+
+#but5 img {
+    height: 25px;
+    width: 25px;
+    position: relative;
+    top: 2px;
+}
+
+#but5-1 img {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 2px;
 }
 
 /*[final 6]*/
@@ -629,18 +651,25 @@ body {
 .button6 {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .button6 a {
-    border: 0.1em solid #000000;
-    padding: 10px 20px;
-    margin-right: 20px;
-
-    border-radius: 10px;
+    margin-right: 10px;
 }
 
 .button6 a:last-child {
     margin-right: 0;
+}
+
+#google6 {
+    width: 100px;
+    height: 40px;
+}
+
+#apple6 {
+    width: 100px;
+    height: 60px;
 }
 
 /*[final 7]*/
@@ -1018,7 +1047,9 @@ body {
 
     .button6 a img {
         padding: 5px;
+       
     }
+
 
     /*[foo7 - Mobile]*/
 
