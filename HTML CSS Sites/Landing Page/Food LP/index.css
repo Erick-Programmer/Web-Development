@@ -283,8 +283,6 @@ body {
     border-bottom-right-radius: 10px;
 }
 
-
-
 .roll2 button {
     padding: 10px;
     border-radius: 50px;
@@ -296,6 +294,9 @@ body {
     height: 15px;
     margin: 0;
     padding: 0;
+    position: relative;
+    top: 1px;
+
 }
 
 #button2 {
@@ -722,19 +723,23 @@ body {
 }
 
 .texto7 h4 {
-    margin-right: 20px;
-
+    margin-right: 5px;
 }
 
-.texto7 a {
-    margin-right: 10px;
-    border: 1px solid blue;
+
+.fundo7 {
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fundo7 a img {
     width: 25px;
     height: 25px;
-}
-
-.texto7 a:last-child {
-    margin-right: 0;
 }
 
 .imagem7 {
@@ -744,7 +749,6 @@ body {
 }
 
 .imagem7 img{
-    border: 1px solid blue;
     margin-top: 20px;
     width: 50px;
     height: 50px;
@@ -873,7 +877,13 @@ body {
     }
 
     .text2 {
-        max-width: 100%;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .text2 h2 {
+        font-size: 25px;
+        font-family: arial;
     }
 
     .roll2 {
@@ -884,8 +894,10 @@ body {
     }
      
     .roll2 button {
-        padding: 10px 20px;
-        font-size: 5px;
+        padding: 2px 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     #button2 {
@@ -895,7 +907,11 @@ body {
     #button2-1 {
         margin-left: 10px;
     }
-   
+    
+    .roll2 button img {
+        width: 40px;
+        height: 15px;
+    }
     
     .roll2 section {
         width: 100px;
@@ -903,12 +919,12 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
 
     .roll2 section img {
         width: 40px;
         height: 40px;
-        justify-content: center;
         margin: 10px;
     }
 
@@ -946,6 +962,16 @@ body {
         justify-content: center;
         align-items: center;
 
+    }
+
+    .text3 section {
+        border: 1px solid red;
+        padding: 0 20px;
+        max-width: 1000px;       
+    }
+
+    .text3 section h3 {
+        font-size: 0.8em;
     }
 
     /*[final4 - Mobile]*/
