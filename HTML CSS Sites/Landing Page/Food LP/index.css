@@ -140,7 +140,7 @@ body {
     color: var(--head0-font-color);
 }
 
-/*[final 1]*/
+/*[final 1 - Desktop]*/
 .main1 {
     display: flex;
     justify-content: space-between;
@@ -231,7 +231,7 @@ body {
 
 }
 
-/*[final 2]*/
+/*[final 2 - Desktop]*/
 .main2 {
     margin: 0 30px;
     max-width: 100%;
@@ -312,7 +312,7 @@ body {
     max-width: 5%;
     border: 2px solid #f04f3a;
 }
-/*[final 3]*/
+/*[final 3 - Desktop]*/
 .main3 {
     margin: 0 30px;
     display: flex;
@@ -388,7 +388,8 @@ body {
     top: 1px;
 }
 
-/*[final 4]*/
+/*[final 4 - Desktop]*/
+
 .main4 {
     margin: 20px 30px;
     display: flex;
@@ -459,63 +460,63 @@ body {
     color: var(--main4-font-color-button4-1);
 }
 
-/*[final 5]*/
-.main5 {
-    margin: 0 30px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
+/*[final 5 - Desktop]*/
 
+.main5 {
+    margin: 50px 30px;
+    display: flex;
+    justify-content: center;
+    
+    
 }
 
 .img5 {
-    padding: 20px 0;
     display: flex;
     justify-content: center;
-    width: 50%;
-    margin-bottom: 20px;
+    align-items: center;
+    width: 50%; /*sem sanfonar*/
 
+    padding: 20px 0;
+    margin-bottom: 20px;
+    
 }
 
 .img5 img {
-    width: 150px;
-    height: 150px;
+    max-width: 150px;
+    max-height: 150px;
 
 }
 
 .text5 {
     display: flex;
     flex-direction: column;
+    width: 50%; /*sem sanfonar*/
     align-items: flex-end;
-    padding: 20px 0;
-    width: 50%;
     
-    margin-top: 20px;
 }
 
 .frase5 {
-    width: 70%;
+    width: 80%;
     text-align: right;
 }
 
 .frase5 h2 {
-    margin: 0;
-    font-size: 2.3em;
+    margin: 7px 0;
+    font-size: 3.5em;
     text-align: justify;
 }
 
 .frase5 p {
     margin: 0;
-    font-size: 0.90em;
+    font-size: 1.1em;
     text-align: justify;
 }
 
 .perfil5 {
     display: flex;
     align-items: center;
-    width: 70%;
-    margin-top: 10px;
+    width: 80%; /*sem sanfonar*/
+    margin-top: 1.3em;
 
 }
 
@@ -523,15 +524,15 @@ body {
     width: 80px;
     height: 80px;
 
-
 }
 
 .text5-1 {
     display: flex;
     flex-direction: column;
     text-align: justify;
+    width: 80%;
 
-    width: 70%;
+
     margin-left: 10px;
 }
 
@@ -551,7 +552,6 @@ body {
 
 .button5 {
     display: flex;
-    justify-content: flex-end;
 
 }
 
@@ -596,7 +596,8 @@ body {
     top: 2px;
 }
 
-/*[final 6]*/
+/*[final 6 - Desktop]*/
+
 .main6 {
     margin: 50px 30px;
     display: flex;
@@ -673,7 +674,7 @@ body {
     height: 60px;
 }
 
-/*[final 7]*/
+/*[final 7 - Desktop]*/
 
 .foo7 {
     margin: 0 30px;
@@ -1025,33 +1026,36 @@ body {
 
     /*[final5 - Mobile]*/
 
-    .main5 {      
+    .main5 { 
+        display: flex;
+        align-items: center;
         max-width: 100%;
-        border: 1px solid red;
+        margin: 70px 0;
         
     }
 
     .img5 {
         display: none;
-        max-width: 100%;
-
     }
 
     .text5 {
-        max-width: 100%;
-
+        display: flex;
+        flex-direction: column;
         align-items: center;
+        
+        width: 100%; /*sem safonar*/
         padding: 0;
     }
 
     .frase5 {
-        max-width: 100%;
+        display: flex;
+        width: 100%;
         align-items: center;
         justify-content: center;
     }
 
     .frase5 h2 {
-        font-size: 1.7em;
+        font-size: 2.5em;
         text-align: justify;
     }
 
@@ -1060,6 +1064,7 @@ body {
     }
 
     .perfil5 {
+        display: flex;
         max-width: 100%;
     }
 
