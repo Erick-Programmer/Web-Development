@@ -146,7 +146,7 @@ body {
     justify-content: space-between;
     background: var(--main1-background);
     margin: 0 30px;
-    max-width: 100%;
+    max-width: 100%; /*base - safonar*/
 
 }
 
@@ -234,7 +234,7 @@ body {
 /*[final 2 - Desktop]*/
 .main2 {
     margin: 0 30px;
-    max-width: 100%;
+    max-width: 100%; /*base - safonar*/
     padding: 0;
 
 }
@@ -869,7 +869,7 @@ body {
     /*[final2 - Mobile]*/
 
     .main2 {
-        max-width: 100%;
+        max-width: 100%; /*base - safonar*/
 
         display: flex;
         flex-direction: column;
@@ -943,7 +943,7 @@ body {
     /*[final3 - Mobile]*/
 
     .main3 {
-        max-width: 100%;
+        max-width: 100%; /*base - safonar*/
 
         display: flex;
         flex-direction: column;
@@ -988,7 +988,7 @@ body {
 
     /*[final4 - Mobile]*/
     .main4 {
-        max-width: 100%;
+        max-width: 100%; /*base - safonar*/
 
         display: flex;
         justify-content: center;
@@ -1029,7 +1029,7 @@ body {
     .main5 { 
         display: flex;
         align-items: center;
-        max-width: 100%;
+        max-width: 100%; /*base - safonar*/
         margin: 70px 0;
         
     }
@@ -1083,8 +1083,7 @@ body {
     /*[final6 - Mobile]*/
 
     .main6 {
-        max-width: 100%;
-
+        max-width: 100%; /*base - safonar*/
 
         display: flex;
         justify-content: center;
@@ -1093,7 +1092,7 @@ body {
     }
 
     .img6 {
-       max-width: 100%;
+       width: 50%;
 
     }
 
@@ -1103,7 +1102,7 @@ body {
     }
 
     .text6 {
-        width: 100%;
+        width: 50%;
     }
 
     .frase6 {
@@ -1111,7 +1110,8 @@ body {
     }
 
     .button6 {
-        padding: 5px 5px;
+        display: flex;
+                
     }
 
     .button6 a {
@@ -1120,14 +1120,23 @@ body {
 
     .button6 a img {
         padding: 5px;
-       
+             
     }
 
+    #google6 {
+        width: 60px;
+        height: 20px;
+    }
+    
+    #apple6 {
+        width: 60px;
+        height: 30px;
+    }
 
     /*[foo7 - Mobile]*/
 
-    .foo7{
-        max-width: 100%;
+    .foo7 {
+        max-width: 100%; /*base - safonar*/
 
         display: flex;
         justify-content: center;
@@ -1136,44 +1145,70 @@ body {
     }
 
     .text7{
-        max-width: 50%;
+        width: 50%;
         font-size: 10px;
 
         display: flex;
         text-align: left;
     }
 
+    .text7 p {
+        padding: 2px 0;
+    }
+
     .img7 {
-        max-width: 100%;
+        width: 50%;
 
         display: flex;
-        flex-direction: column;
+        justify-content: right;
     }
 
     .texto7 {
+        width: 100%;
+
         display: flex;
-        justify-content: right;
-        align-items: center;
+        justify-content: flex-end;
+        position: relative;
+        top: -25px;
     }
 
     .texto7 h4{
-        font-size: 12px
+        font-size: 12px;
+        position: relative;
+        
     }
 
-    .texto7 a {
-        padding: 0;
-        width: 5px;
-        height: 5px;
-        font-size: 10px;
+
+    .fundo7 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fundo7 a img {
+        width: 13px;
+        height: 13px;
+        position: relative;
+        top: 2px;
     }
 
     .imagem7 {
+        width: 100%;
+
+        display: flex;
         justify-content: right;
+        margin-right: 2px;
+
+        position: relative;
+        top: -40px;
+        right: 10px;
+
     }
 
     .imagem7 img{
         max-width: 15px;
         height: 20px;
+        
     }
 
 }
