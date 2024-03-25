@@ -110,9 +110,11 @@ body {
 
 
 @media screen and (min-width: 431px) {
-    .menu0M {
+    #toggle0,
+    #toggle0-btn {
         display: none; 
     }
+
 }
 
 .nav0 {
@@ -773,7 +775,7 @@ body {
     }
 
     .head0 {
-        max-width: 100%;
+        max-width: 100%; /*sanfonar*/
 
         border-radius: 0%;
         margin: 0 auto;
@@ -781,7 +783,7 @@ body {
     }
 
     .logo0{
-        max-width: 50%;
+        width: 50%;
 
     }
 
@@ -789,12 +791,58 @@ body {
         font-size: 1.2em;
 
     }
-
+    
 
     .nav0{
-        max-width: 50%;
-        display: none;
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
     }
+
+    .toggle0-btn {
+        display: block;
+        cursor: pointer;
+    }
+
+    .bar0 {
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px 0;
+    }
+    
+
+    .nav0 ul {
+        display: none;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #333;
+    }
+
+    .nav0 ul li {
+        display: block;
+        text-align: center;
+    }
+
+    .nav0 ul li a {
+        text-decoration: none;
+        color: #fff;
+        padding: 10px;
+        display: block;
+    }
+
+    #toggle0:checked + .toggle0-btn + .nav0 ul {
+        display: block;
+    }
+
+    .nav0 ul li {
+        display: block;
+        text-align: center;
+    }
+    
 
     /*[final1 - Mobile] - [ADD IMAGE]*/
    
