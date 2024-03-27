@@ -110,8 +110,8 @@ body {
 
 
 @media screen and (min-width: 431px) {
-    #toggle0,
-    #toggle0-btn {
+    #side0-menu,
+    #hamb0 {
         display: none; 
     }
 
@@ -780,21 +780,26 @@ body {
     /*[final0 - Mobile] - [ADD LIST MENU]*/
     header {
         background: var(--head0-background);
-
+        
     }
 
     .head0 {
-        max-width: 100%; /*sanfonar*/
+        width: 100%; /*sanfonar*/
 
         border-radius: 0%;
         margin: 0 auto;
+        /*hamb*/
+        position: sticky;
         display: flex;
-
-
+        top: 0;
+        
     }   
     
     .logo0{
         width: 50%;
+        
+        /*hamb*/
+        display: flex; /*flex*/
 
     }
 
@@ -802,33 +807,91 @@ body {
         font-size: 1.2em;
 
     }
-    
-    .nav0{
-        width: 50%;
 
+    /* Style label tag */
+    .hamb0 {
+        cursor: pointer;
+        float: right;
+        padding: 40px 20px;
+    }
+
+    /* Style span tag */
+    .hamb0-line {
+        background: black;
+        display: block;
+        height: 2px;
+        position: relative;
+        width: 24px; 
+    }
+
+    .hamb0-line::before,
+    .hamb0-line::after {
+        background: black;
+        content: "";
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+
+    .hamb0-line::before {
+        top: 5px;
+    }
+
+    .hamb0-line::after {
+        top: -5px;
+    }
+
+    #side0-menu {
         display: none;
 
-    }
-   
-    .nav0 ul {
-        display: flex;
-    }
+    }/*hide checkbox*/
 
-    .nav0 ul li {
-        display: block;
-        text-align: center;
+    #side0-menu:checked ~ .nav0 {
+        max-height: 100%;
     }
 
-    .nav0 ul li a {
-        text-decoration: none;
+    #side0-menu:checked ~ .hamb0 .hamb0-line {
+        background: transparent;
     }
 
+    #side0-menu:checked ~ .hamb0 .hamb0-line::before {
+        transform: rotate(-45deg);
+        top:0;
+    }
 
-    .nav0 ul li {
-        display: block;
-        text-align: center;
+    #side0-menu:checked ~ .hamb0 .hamb0-line::after {
+        transform: rotate(45deg);
+        top:0;
     }
     
+    .nav0{
+        /*hamb*/
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        overflow: hidden;
+        background: var(--head0-background);
+    }
+
+    .menu0 a {
+        text-decoration: none;
+        display: block;
+        padding: 30px;
+        
+    }
+
+    .menu0 a:hover {
+        background-color: var(--gray);
+
+    }
+
+    .nav0 {
+        /*hamb*/
+        max-height: 0;
+        transition: max-height .5s ease-out;
+    }
 
     /*[final1 - Mobile] - [ADD IMAGE]*/
    
