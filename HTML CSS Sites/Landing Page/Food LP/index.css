@@ -117,13 +117,7 @@ body {
 
 }
 /*menu toggle - para mobile/tablet*/
-.toggle0-btn {
-    color: #000000;
-    cursor: pointer;
-    margin: 0 20px 0 0;
-    position: absolute;
-    right: 10px;
-}
+
 
 .nav0 {
     justify-content: center;
@@ -149,6 +143,28 @@ body {
     font-size: 1.15em;
     color: var(--head0-font-color);
 }
+
+/* .nav0 {
+    max-height: none;
+    top:0;
+    position: relative;
+    float: right;
+    width: fit-content;
+    background-color: transparent;
+}
+
+.menu0 li {
+    float: left;
+}
+
+.menu0 a:hover {
+    background-color: transparent;
+    color: black;
+}
+
+.hamb0 {
+    display: none;
+} */
 
 /*[final 1 - Desktop]*/
 .main1 {
@@ -778,6 +794,7 @@ body {
     as medições*/
 
     /*[final0 - Mobile] - [ADD LIST MENU]*/
+
     header {
         background: var(--head0-background);
         
@@ -789,9 +806,7 @@ body {
         border-radius: 0%;
         margin: 0 auto;
         /*hamb*/
-        position: sticky;
         display: flex;
-        top: 0;
         
     }   
     
@@ -808,90 +823,15 @@ body {
 
     }
 
-    /* Style label tag */
-    .hamb0 {
-        cursor: pointer;
-        float: right;
-        padding: 40px 20px;
-    }
-
-    /* Style span tag */
-    .hamb0-line {
-        background: black;
-        display: block;
-        height: 2px;
-        position: relative;
-        width: 24px; 
-    }
-
-    .hamb0-line::before,
-    .hamb0-line::after {
-        background: black;
-        content: "";
-        display: block;
-        height: 100%;
-        position: absolute;
-        transition: all .2s ease-out;
-        width: 100%;
-    }
-
-    .hamb0-line::before {
-        top: 5px;
-    }
-
-    .hamb0-line::after {
-        top: -5px;
-    }
-
-    #side0-menu {
-        display: none;
-
-    }/*hide checkbox*/
-
-    #side0-menu:checked ~ .nav0 {
-        max-height: 100%;
-    }
-
-    #side0-menu:checked ~ .hamb0 .hamb0-line {
-        background: transparent;
-    }
-
-    #side0-menu:checked ~ .hamb0 .hamb0-line::before {
-        transform: rotate(-45deg);
-        top:0;
-    }
-
-    #side0-menu:checked ~ .hamb0 .hamb0-line::after {
-        transform: rotate(45deg);
-        top:0;
-    }
-    
     .nav0{
         /*hamb*/
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        overflow: hidden;
-        background: var(--head0-background);
+        display: none;
     }
 
-    .menu0 a {
-        text-decoration: none;
-        display: block;
-        padding: 30px;
-        
+    .side0-menu {
+        display: none;
     }
 
-    .menu0 a:hover {
-        background-color: var(--gray);
-
-    }
-
-    .nav0 {
-        /*hamb*/
-        max-height: 0;
-        transition: max-height .5s ease-out;
-    }
 
     /*[final1 - Mobile] - [ADD IMAGE]*/
    
